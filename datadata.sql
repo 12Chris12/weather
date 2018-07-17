@@ -11,7 +11,7 @@
  Target Server Version : 50560
  File Encoding         : 65001
 
- Date: 17/07/2018 16:45:00
+ Date: 17/07/2018 16:58:40
 */
 
 SET NAMES utf8mb4;
@@ -62,4 +62,21 @@ CREATE TABLE `records`  (
 -- Table structure for student
 -- ----------------------------
 DROP TABLE IF EXISTS `student`;
-CREAT
+CREATE TABLE `student`  (
+  `id` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
+  `name` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `age` int(3) DEFAULT NULL,
+  `dept` char(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `address` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of student
+-- ----------------------------
+INSERT INTO `student` VALUES ('1', '张三', 23, 'kjhgelij', 'dsvdws');
+INSERT INTO `student` VALUES ('1507', 'Tom', 20, '计算机', '湖南');
+INSERT INTO `student` VALUES ('2', '李四', 30, 'dffds', 'ttttu');
+INSERT INTO `student` VALUES ('3', '王五', 35, 'iyui', 'uyiu');
+
+SET FOREIGN_KEY_CHECKS = 1;
