@@ -22,12 +22,12 @@
         	    /////////////
         	    $.get("/weather/questions",
         	            function(data,status){
-        	            //alert("数据:\n"+data+"\n状态:"+status);
+        	         //   alert("数据:\n"+data+"\n状态:"+status);
         	            var o = eval('('+data+')');
-        	            var q1 = o.question1;
-        	            var q2 = o.question2;
-        	            var q3 = o.question3;
-        	            var q4 = o.question4;
+        	            var q1 = o.questions1;
+        	            var q2 = o.questions2;
+        	            var q3 = o.questions3;
+        	            var q4 = o.questions4;
         	            var standard="CCCC";
         	    $("#t1").text(q1.question);
         		$("#a11").html(q1.optA);
@@ -69,7 +69,7 @@
 <body>
 <div class="container">
 <h3 align="center">第一题</h3>
-<p id="t1"> 题目有待从数据库读取 </p>
+<p id="t1">题目有待从数据库读取 </p>
     <input type="radio" name="radiobutton1" value="A" checked><span id="a11">选项有待从数据库读取</span><br>
     <input type="radio" name="radiobutton1" value="B"><span id="a12">法兰克王国</span><br>
     <input type="radio" name="radiobutton1" value="C"><span id="a13">拜占庭帝国</span><br>

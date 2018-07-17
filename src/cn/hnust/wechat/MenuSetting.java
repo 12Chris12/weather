@@ -42,7 +42,7 @@ public class MenuSetting {
         		+ "{"	
                 + "\"type\":\"view\","
                 + "\"name\":\"¿ªÊ¼´ðÌâ\","
-                + "\"url\":\"http://pcrzup.natappfree.cc/weather/qa.html\""
+                + "\"url\":\"http://rf9ufa.natappfree.cc/weather/qa.html\""
                 + "}]"
         		+ "},"
         		+ "{"

@@ -28,7 +28,16 @@
   	  <url-pattern>/Genti</url-pattern>
   </servlet-mapping> 
   
-
+ 
+  <servlet>
+  	  <servlet-name>questions</servlet-name>
+  	  <servlet-class>cn.hnust.questions</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	  <servlet-name>questions</servlet-name>
+  	  <url-pattern>/questions</url-pattern>
+  </servlet-mapping> 
+  
   
     <servlet>
   	  <servlet-name>WxServlet</servlet-name>

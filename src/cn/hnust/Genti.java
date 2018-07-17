@@ -85,7 +85,7 @@ public class Genti extends HttpServlet {
 				obj1.put("optC", q1.optC);
 				obj1.put("optD", q1.optD);
 				obj1.put("answer", q1.answer);
-				obj.put("question"+(k+1), obj1);
+				obj.put("questions"+(k+1), obj1);
 			}
 			
 			System.out.println(obj.toString());
